@@ -1,0 +1,227 @@
+:root {
+  /*========== Кольори ==========*/
+  --primary-color: #2196f3;
+  --secondary-color: ##f5f4fa;
+  --container-color: #f5f4fa;
+  --footer-color: #2f303a;
+  --text-color: #212121;
+  --text-color-light: #757575;
+  --text-color-white: #ffffff;
+
+  /*========== font  ==========*/
+  --body-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
+
+  /*========== font size ==========*/
+  --logo-font-size: 26px;
+  --h1-font-size: 44px;
+  --h2-font-size: 36px;
+  --h3-font-size: 16px;
+  --p-font-size: 14px;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+}
+
+/* Стиль для лого */
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--primary-color);
+
+  font-family: var(--logo-font);
+  font-size: var(--logo-font-size);
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.logo-accent {
+  color: var(--text-color);
+}
+
+/* Стиль для навігації */
+.list {
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--text-color);
+
+  font-size: var(--p-font-size);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--primary-color);
+}
+
+.current {
+  color: var(--primary-color);
+}
+
+/* Стиль для адреси */
+.contacts {
+  color: var(--text-color-light);
+
+  font-size: var(--p-font-size);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--primary-color);
+}
+
+/* Стиль для героя */
+.hero-title {
+  color: var(--text-color-white);
+  background-color: #212121;
+
+  font-size: var(--h1-font-size);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-align: center;
+  line-height: 1.36;
+}
+
+.hero-btn {
+  color: var(--text-color-white);
+  background-color: var(--primary-color);
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  border: transparent;
+  cursor: pointer;
+}
+
+/* Стиль для наші переваги */
+.advantages-title-hide {
+  display: none;
+}
+
+.advantages-title {
+  font-size: var(--h3-font-size);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages-text {
+  color: var(--text-color-light);
+
+  font-size: var(--p-font-size);
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Стиль для Чим ми займаємось */
+.work-title {
+  font-size: var(--h2-font-size);
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* Стиль для Наша команда */
+.team-title {
+  font-size: var(--h2-font-size);
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team-subtitle {
+  font-size: var(--h3-font-size);
+  font-weight: 500;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
+}
+
+.team-text {
+  color: var(--text-color-light);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
+}
+
+/* Стиль для футера */
+.site-footer {
+  background-color: var(--footer-color);
+}
+
+.site-footer .logo-accent,
+.contacts-map {
+  color: var(--text-color-white);
+}
+
+.contacts-footer {
+  color: var(--text-color-light);
+
+  font-size: var(--p-font-size);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Стиль для сторінки Портфоліо */
+.filter-btn {
+  color: var(--text-color);
+  background-color: var(--container-color);
+
+  font-size: var(--h3-font-size);
+  font-weight: 500;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+
+  border: transparent;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--text-color-white);
+  background-color: var(--primary-color);
+
+  cursor: pointer;
+}
+
+.portfolio-title-hide {
+  display: none;
+}
+
+.portfolio-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  color: var(--text-color-light);
+
+  font-size: var(--h3-font-size);
+  font-weight: 400;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+}
