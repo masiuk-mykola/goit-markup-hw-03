@@ -25,6 +25,15 @@ body {
   color: var(--text-color);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header {
+  border-bottom: 1px solid #ececec;
+}
 /* Стиль для лого */
 .link {
   text-decoration: none;
@@ -47,7 +56,14 @@ body {
 /* Стиль для навігації */
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+/* .site-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+} */
 
 .nav-link {
   color: var(--text-color);
@@ -84,6 +100,9 @@ body {
 
 /* Стиль для героя */
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--text-color-white);
   background-color: #212121;
 
@@ -99,6 +118,7 @@ body {
   color: var(--text-color-white);
   background-color: var(--primary-color);
 
+  text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
@@ -106,14 +126,24 @@ body {
 
   border: transparent;
   cursor: pointer;
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 
-/* Стиль для наші переваги */
+/* стиль секції */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* ?Стиль для наші переваги */
 .advantages-title-hide {
   display: none;
 }
 
 .advantages-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: var(--h3-font-size);
   font-weight: 700;
   line-height: 1.14;
@@ -122,6 +152,8 @@ body {
 }
 
 .advantages-text {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--text-color-light);
 
   font-size: var(--p-font-size);
@@ -132,6 +164,8 @@ body {
 
 /* Стиль для Чим ми займаємось */
 .work-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-size: var(--h2-font-size);
   font-weight: 700;
   line-height: 1.16;
@@ -139,8 +173,20 @@ body {
   text-align: center;
 }
 
+.work-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Стиль для Наша команда */
+.team {
+  background-color: var(--container-color);
+}
+
 .team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-size: var(--h2-font-size);
   font-weight: 700;
   line-height: 1.16;
@@ -155,7 +201,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.team-text {
+.text {
   color: var(--text-color-light);
 
   font-size: 16px;
@@ -165,11 +211,11 @@ body {
 }
 
 /* Стиль для футера */
-.site-footer {
+.footer {
   background-color: var(--footer-color);
 }
 
-.site-footer .logo-accent,
+.footer .logo-accent,
 .contacts-map {
   color: var(--text-color-white);
 }
@@ -217,11 +263,12 @@ body {
   letter-spacing: 0.06em;
 }
 
-.portfolio-text {
-  color: var(--text-color-light);
+.container-img {
+  border: 1px solid #eeeeee;
+}
 
-  font-size: var(--h3-font-size);
-  font-weight: 400;
-  line-height: 1.875;
-  letter-spacing: 0.03em;
+.portfolio-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
