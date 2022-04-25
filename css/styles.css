@@ -237,7 +237,10 @@ ul {
 
 .work {
   display: flex;
-  justify-content: space-between;
+}
+
+.work-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .img {
@@ -265,7 +268,6 @@ ul {
 
 .team {
   display: flex;
-  justify-content: space-between;
 }
 
 .team-subtitle {
@@ -294,6 +296,10 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
   text-align: center;
+}
+
+.team-card:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* !стиль Футера */
@@ -339,6 +345,7 @@ ul {
 .filter {
   display: flex;
   justify-content: center;
+  margin-bottom: 56px;
 }
 
 .filter-items:not(:last-child) {
@@ -346,7 +353,7 @@ ul {
 }
 .filter-btn {
   padding: 6px 22px;
-  margin-bottom: 56px;
+
   border: transparent;
   cursor: pointer;
   border-radius: 4px;
@@ -371,13 +378,25 @@ ul {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+
+.portfolio-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
 }
 
 .portfolio-item {
   background-color: #ffffff;
-  margin-bottom: 30px;
-  border: 1px solid #eeeeee;
+  /* margin-bottom: 30px; */
+}
+
+.portfolio-link {
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .portfolio-img {
@@ -386,20 +405,19 @@ ul {
   height: auto;
 }
 
+.portfolio-caption {
+  padding: 20px 24px;
+}
 .portfolio-subtitle {
-  padding: 20px 24px 0;
-
+  margin-bottom: 4px;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.14;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 .portfolio-text {
-  padding: 10px 24px 20px;
-
   color: var(--text-color-light);
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.1875;
+  line-height: 1.875;
   letter-spacing: 0.03em;
 }
